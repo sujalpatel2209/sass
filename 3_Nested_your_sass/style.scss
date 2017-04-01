@@ -1,0 +1,34 @@
+$width : 100%;
+$bgColor : black;
+$color : white;
+$margin : 0px;
+$padding : 1em;
+body{
+    margin: $margin;
+}
+header{
+    padding: $padding;
+    color: $color;
+    background-color: $bgColor;
+    clear: left;
+    text-align: center;
+}
+nav{
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: $padding;
+        ul{
+            list-style-type: none;
+            padding: 0;   
+        a{
+            text-decoration: none;
+        }   
+    }
+}
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: $padding;
+    overflow: hidden;
+}
