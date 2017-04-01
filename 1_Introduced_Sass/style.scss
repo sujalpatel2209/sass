@@ -1,0 +1,17 @@
+$color : white;
+$bgColor : grey;
+
+div{
+    &.bgColor{
+        background-color: $bgColor;
+    }
+    &.full{
+        width: 100%;
+    }
+    &.textCenter{
+        text-align: center;
+    }
+    &.fontColor{
+        color: $color;
+    }
+}
