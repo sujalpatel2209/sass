@@ -1,0 +1,33 @@
+body {
+  margin: 0px; }
+
+header {
+  border-radius: 20px;
+  padding: 1em;
+  color: white;
+  background-color: black;
+  clear: left;
+  text-align: center; }
+
+nav {
+  border-radius: 10px;
+  float: left;
+  max-width: 160px;
+  margin: 0;
+  background-color: darkgrey;
+  padding: 50px; }
+  nav ul {
+    list-style-type: none;
+    padding: 0; }
+    nav ul a {
+      text-decoration: none; }
+
+article {
+  border-radius: 10px;
+  margin-left: 170px;
+  border-left: 1px solid gray;
+  padding: 1em;
+  overflow: hidden;
+  background-color: gray; }
+
+/*# sourceMappingURL=style.css.map */
