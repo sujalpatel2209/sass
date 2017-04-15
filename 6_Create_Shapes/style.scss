@@ -1,0 +1,48 @@
+
+@mixin circle($size,$color){
+    width: $size;
+    height: $size;
+    border-radius: $size/2;
+    background-color: $color;
+}
+
+// @mixin border-left($value){
+//     border-left: $value solid transparent;
+// }
+
+// @mixin border-right($value){
+//     border-right: $value solid transparent;
+// }
+
+// @mixin border-top($value){
+//     border-top: $value solid transparent;
+// }
+
+// @mixin border-bottom($value){
+//     border-bottom: $value solid transparent;
+// }
+
+// @mixin triangle($size, $type, $color){
+//     @if $type == up {
+//         width: 0;
+//         height: 0;
+//         border-left:5px solid transparent;
+//         border-right:5px solid transparent;
+//         border-top:5px solid transparent;
+//     }
+// }
+
+@mixin display(){
+    display: block;
+}
+.main{
+    .circle{
+        @include circle(200px,red);
+        @include display();
+    }
+    // .triangle{
+    //     @include triangle(5px, "up", blue); 
+    //     @include display();
+    // }
+}
+
