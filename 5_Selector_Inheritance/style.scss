@@ -1,0 +1,52 @@
+$width : 100%;
+$bgColor : black;
+$color : white;
+$margin : 0px;
+$padding : 1em;
+$articalColor : gray;
+$navColor : darkgrey;
+
+
+@mixin border-radius($radius: 20px){ // 10px Set Default Value
+    border-radius: $radius;
+}
+
+body{
+    margin: $margin;
+}
+header{
+    @include border-radius;
+    padding: $padding;
+    color: $color;
+    background-color: $bgColor;
+    clear: left;
+    text-align: center;
+}
+nav{
+    @include border-radius(10px);
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    background-color: $navColor;
+    padding: 50px;
+        ul{
+            list-style-type: none;
+            padding: 0;   
+        a{
+            text-decoration: none;
+        }   
+    }
+}
+.art1 {
+    @include border-radius(10px);
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: $padding;
+    overflow: hidden;
+    background-color: $articalColor;
+}
+
+.art2 {
+    @extend .art1;
+    margin-top: $margin+10px;
+}
