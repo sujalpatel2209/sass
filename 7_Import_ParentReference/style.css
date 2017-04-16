@@ -1,0 +1,10 @@
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background-color: red;
+  display: block; }
+  .circle:hover {
+    background-color: blue; }
+
+/*# sourceMappingURL=style.css.map */
